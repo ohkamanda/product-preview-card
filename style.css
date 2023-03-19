@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-media {
+    width: 50%;
+    height: 450px;
+    background-image: url("image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-content {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.card {
+    width: 600px;
+    display: flex;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+ @media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        height: 600px;
+    }
+    .card-content {
+        width: 80%;
+    }
+    button {
+        margin: 10px;
+    }
+    .card-media {
+        background-image: url("image-product-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 300px;
+    }
+ }
+
+ .card-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 75%);
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    text-align: left;
+ }
+
+ .card-content h2 {
+    padding-bottom: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  
+  .card-content p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 47%);
+    text-align: left;
+  }
+  
+#price {
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    color: hsl(157, 81%, 27%);
+    display: inline;
+  }
+  
+#old-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+    display: inline;
+    padding-left: 15px;
+  }
+
+button {
+    background-color: hsl(157, 81%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 90%;
+    border: 0;
+    margin-bottom: 20px;
+}
+  
+button:hover {
+    cursor: pointer;
+    background-color: hsl(157, 81%, 11%);
+} 
+
+button img {
+    padding-right: 10px;
+}
